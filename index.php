@@ -65,9 +65,32 @@ $faq= [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domande frequenti - Privacy e termini - Google</title>
+    <!-- coll css -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="h-top">
+            <div class="left d-flex">
+                <img src="./img/googlelogo_clr_74x24px.svg" alt="logo">
+                <h4>Privacy e termini</h4>
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+        <div class="h-bottom">
+            <nav>
+                <ul class="d-flex">
+                    <li><a href="#">Introduzione</a></li>
+                    <li><a href="#">Norme sulla privacy</a></li>
+                    <li><a href="#">Termini di servizio</a></li>
+                    <li><a href="#">Tecnologie</a></li>
+                    <li><a href="#">Domande frequenti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
         <?php foreach($faq as $chiave => $valore) { ?>
             <div>
@@ -76,6 +99,31 @@ $faq= [
             </div>
         <?php } ?>
     </main>
-    <footer></footer>
+    <footer class="d-flex">
+        <div class="left">
+            <nav>
+                <ul class="d-flex">
+                    <li class="pallino">
+                        <a href="#" >Google</a> 
+                    </li>
+                    <li class="pallino">
+                        <a href="#" >Tutto su Google</a>
+                    </li>
+                    <li class="pallino">
+                        <a href="#" >Privacy</a>
+                    </li>
+                    <li class="pallino">
+                        <a href="#" >Termini</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right d-flex">
+            <div class="lingua"></div>
+            <select>
+                <option value="it">italiano</option>
+            </select>
+        </div>
+    </footer>
 </body>
 </html>
