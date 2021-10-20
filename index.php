@@ -67,6 +67,14 @@ $faq= [
     <title>Domande frequenti - Privacy e termini - Google</title>
     <!-- coll css -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -82,14 +90,15 @@ $faq= [
         <div class="h-bottom">
             <nav>
                 <ul class="d-flex">
-                    <li><a href="#">Introduzione</a></li>
-                    <li><a href="#">Norme sulla privacy</a></li>
-                    <li><a href="#">Termini di servizio</a></li>
-                    <li><a href="#">Tecnologie</a></li>
-                    <li><a href="#">Domande frequenti</a></li>
+                    <li><a href="#"><strong>Introduzione</strong> </a></li>
+                    <li><a href="#"><strong>Norme sulla privacy</strong></a></li>
+                    <li><a href="#"><strong>Termini di servizio</strong></a></li>
+                    <li><a href="#"><strong>Tecnologie</strong></a></li>
+                    <li><a href="#" class="active"><strong>Domande frequenti</strong></a></li>
                 </ul>
             </nav>
         </div>
+        <hr>
     </header>
     <main>
         <?php foreach($faq as $chiave => $valore) { ?>
@@ -99,31 +108,35 @@ $faq= [
             </div>
         <?php } ?>
     </main>
-    <footer class="d-flex">
-        <div class="left">
-            <nav>
-                <ul class="d-flex">
-                    <li class="pallino">
-                        <a href="#" >Google</a> 
-                    </li>
-                    <li class="pallino">
-                        <a href="#" >Tutto su Google</a>
-                    </li>
-                    <li class="pallino">
-                        <a href="#" >Privacy</a>
-                    </li>
-                    <li class="pallino">
-                        <a href="#" >Termini</a>
-                    </li>
-                </ul>
-            </nav>
+    <footer>
+        <div class="d-flex">
+            <div class="left">
+                    <nav>
+                        <ul class="d-flex">
+                            <li class="pallino">
+                                <a href="#" >Google</a> 
+                            </li>
+                            <li class="pallino">
+                                <a href="#" >Tutto su Google</a>
+                            </li>
+                            <li class="pallino">
+                                <a href="#" >Privacy</a>
+                            </li>
+                            <li class="pallino">
+                                <a href="#" >Termini</a>
+                            </li>
+                        </ul>
+                    </nav>
+            </div>
+            
+            <div class="right d-flex">
+                    <div class="lingua"></div>
+                    <select>
+                        <option value="it">italiano</option>
+                    </select>
+            </div>
         </div>
-        <div class="right d-flex">
-            <div class="lingua"></div>
-            <select>
-                <option value="it">italiano</option>
-            </select>
-        </div>
+        
     </footer>
 </body>
 </html>

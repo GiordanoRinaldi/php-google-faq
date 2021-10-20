@@ -1,15 +1,14 @@
 /* formattazione base */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /*common*/
 
 .d-flex {
     display: flex;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav > ul > li {
@@ -22,7 +21,49 @@ a{
 
 /*style*/
 
+/*header*/
+header{
+    background-color: white;
+    width: 100%;
+    color: #5f6368;
+
+    font-family: 'Open Sans', sans-serif;
+
+    position: fixed;
+
+}
+
+header .left {
+    margin-left: 40px;
+}
+
+header  a {
+    color: #5f6368;
+    margin-right: 42px;
+}
+
+.active{
+    color: #3367d6;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #3367d6;
+}
+
+hr{
+    margin: 0;
+}
+
 /*main*/
+main{
+    max-width: 978px;
+    margin: 0 auto;
+    padding: 132px 32px 32px 32px;
+}
+
+h2{
+    padding-top: 64px;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .target {
     background: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='rgb(51, 103, 214)'%3E%3Cpath d='M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z'/%3E%3C/svg%3E") right/12px no-repeat;
 
@@ -30,6 +71,33 @@ a{
 }
 
 /*footer*/
+
+footer{
+    background: #f5f5f5;
+}
+
+footer ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+footer > .d-flex{
+    height: 24px;
+    max-width: 978px;
+    padding: 10px 0;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: rgba(61,61,61,.8);
+}
+
+footer select {
+    display: block;
+}
+
 .pallino:not(:first-child)::before{
     content: "\0000b7";
     padding: 0 5px;
